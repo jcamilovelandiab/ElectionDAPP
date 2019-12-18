@@ -96,11 +96,11 @@
 ]; // Add Your Contract ABI here!!!
       console.log("ABI->\n"+contractAbi);
       // Set Contract Address
-      var contractAddress = '0x9d938ef0eb3f32b63bc13c02ea0c11495017f595'; // Add Your Contract address here!!!
+      var contractAddress = '0xefBd7B85C189F9D67CD1c737B409B5c197D3939a'; // Add Your Contract address here!!!
 
       // Set the Contract
       var contract = web3.eth.contract(contractAbi).at(contractAddress);
-      console.log("contract->"+contract);
+      console.log("contract :"+contractAddress+"->\n"+contract);
       
       // Display Candidate Name
       contract.candidateName(function(err, candidateName) {
