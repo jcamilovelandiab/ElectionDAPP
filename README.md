@@ -78,4 +78,34 @@ In ganache we see something the transaction was executed, and it was a contract 
 In Metamask we see that the transaction was executed, and the wallet has less ETH.
 ![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/TheContractWasDeployedMetaMask.PNG)
 
-## Linking the website with the blockchain.
+## Linking the website with the blockchain
+
+We clone this repository with the command ```git clone https://github.com/jcamilovelandiab/ElectionDAPP```.
+We can see in index.html this script.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/Script.PNG)
+
+As we can see, the web3 is connecting to http://127.0.0.1/7545 which is the ganache network url.
+In the variable contractAbi we put the Election contract ABI. We can get it from Remix.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/RemixABI.PNG)
+
+And, in the variable contractAddress we put the address which we can get it from Remix too.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/TransactionAddress.PNG)
+
+Then, we just open the index.html, and test that the application is communicating with the blockchain and is working properly.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/Index.PNG)
+
+We enter the candidate’s name.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/test1.PNG)
+
+We see the candidate’s name changed.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/test2.PNG)
+
+We check and see in Ganache that a block has been created and added to the blockchain.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/testGanache.PNG)
