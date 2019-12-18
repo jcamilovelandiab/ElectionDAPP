@@ -33,3 +33,49 @@ After the plugins activation, we go the Solidity Compiler tab and select the com
 
 ![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/CompilingElectionContract.PNG)
 
+## Creating a blockchain network in Ganache.
+
+We can download Ganache in https://www.trufflesuite.com/ganache. We open the app and create a new workspace called "election-dapp".
+
+After creating the project in Ganache, we see that Ganache created 10 wallets. We see also the MNEMONIC word. We can see the wallets activity on MetaMask through this special word that Ganache created for us.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/CreatingWorkspaceInGanache.PNG)
+
+## Connecting Ganache with MetaMask.
+
+We add the Metamask extension to Google Chrome. Next, we enter the Wallet Seed (MNEMONIC word) and create the account password.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/EnteringSeedOnMetaMask.PNG)
+
+Then, we create a new network in MetaMask for Ganache.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/CustomizedRPC.PNG)
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/CustomizedRPC2.PNG)
+
+Finally, we could access to the wallet. As we can see, it’s the same wallet with 100ETH that ganache created for us.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/CustomizedRPC3.PNG)
+
+## Deploying the Smart Contract with Remix.
+
+After MetaMask and Remix are linked (They link to each other by themselves), we select the Injection Web3 environment and deploy the election contract.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/DeployingContract.PNG)
+
+MetaMask shows the cost of deploying the contract, and then we confirm the transaction.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/CostOfDeployingContract.PNG)
+
+And, we see the contract was deployed successfully.
+
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/TheContractWasDeployed.PNG)
+
+In ganache we see something the transaction was executed, and it was a contract creation.
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/TheContractWasDeployedGanache.PNG)
+
+
+In Metamask we see that the transaction was executed, and the wallet has less ETH.
+![](https://github.com/jcamilovelandiab/ElectionDAPP/blob/master/images/TheContractWasDeployedMetaMask.PNG)
+
+## Linking the website with the blockchain.
